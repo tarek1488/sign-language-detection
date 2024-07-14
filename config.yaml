@@ -1,0 +1,9 @@
+path: D:\self-grinding\deeplearning\object-detection\sign-language-detector\data
+train: images\train
+val: images\train
+
+# classes
+
+names:
+  0: hello
+  1: iloveyou

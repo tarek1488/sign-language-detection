@@ -1,3 +1,7 @@
 
-/sign-language-dataset
+/data
 /ybat-master
+/runs
+/obj.data 
+/obj.names
+/train.txt
