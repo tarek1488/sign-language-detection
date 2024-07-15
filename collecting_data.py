@@ -5,10 +5,10 @@ import os
 
 def read_data():
     # our signs
-    labels = ['hello', 'iloveyou', 'yes', 'no', 'thankyou']
+    labels = ['yes', 'no', 'hello']
     
     # the path to the folder that will contain the images
-    data_path = 'sign-language-dataset'
+    data_path = 'data2'
     
     # create the folder if it doesn't exist
     if not os.path.exists(data_path):
@@ -27,7 +27,7 @@ def read_data():
             # reading a frame
             print(f'be ready image num {i+1} will be taken after 2 seconds')
             
-            time.sleep(2) # sleep for 2 seconds 
+            #time.sleep(2) # sleep for 2 seconds 
             
             # capturing a frame 
             ret, frame = cap.read()
@@ -45,10 +45,10 @@ def read_data():
             # showing the captured image
             cv2.imshow('frame', frame)
             
-            # wait for 2 seconds
+            # wait for 1 seconds
             print(f'image number #{i+1} taken now change position')
             
-            time.sleep(3)
+            time.sleep(1)
     
             if cv2.waitKey(1) and 0xff == ord('q'):
                 break
