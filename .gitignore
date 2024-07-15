@@ -7,3 +7,6 @@
 /train.txt
 /data2
 /data1
+/sklearn/data_svm
+/sklearn/model.p
+/sklearn/data.pickle

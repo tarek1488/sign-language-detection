@@ -5,10 +5,10 @@ import os
 
 def read_data():
     # our signs
-    labels = ['yes', 'no', 'hello']
+    labels = ['no', 'hello']
     
     # the path to the folder that will contain the images
-    data_path = 'data2'
+    data_path = 'sklearn\data_svm'
     
     # create the folder if it doesn't exist
     if not os.path.exists(data_path):
@@ -23,7 +23,7 @@ def read_data():
         # sleep before start taking images for each label
         time.sleep(5) # 5 seconds 
         
-        for i in range(15):
+        for i in range(50):
             # reading a frame
             print(f'be ready image num {i+1} will be taken after 2 seconds')
             
@@ -50,7 +50,7 @@ def read_data():
             
             time.sleep(1)
     
-            if cv2.waitKey(1) and 0xff == ord('q'):
+            if cv2.waitKey(40) and 0xff == ord('q'):
                 break
     
     cap.release()
